@@ -1,0 +1,106 @@
+.leftContainer{
+    width:25%;
+    padding: 9px;
+    }
+    .centeringpurpose{
+        margin-left: 4%;
+        margin-right:4%;
+        display:flex;
+        padding-top: 30px;
+    }
+    .rightContainer{
+        width:75%;
+        padding-left: 6px;
+        border-left:1px solid grey;
+        height:100%;
+    }
+    .allinoneContainer{
+        margin-top:10px;
+    
+        height: 100vh;
+    }
+    .wraps{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .dropdowns1{
+        display: flex;
+        justify-content: space-between;
+        justify-items:center ;
+        align-items: center;
+    }
+    .pillss{
+        width: auto;
+        min-width: 105px;
+        height: 30px;
+        background: #f0f0f0;
+        border-radius: 15px;
+        display: flex;
+        /* justify-content: center; */
+        /* align-content: center; */
+        padding: 2px;
+        place-content: center;
+        margin-left: 10px;
+    
+    }
+    .sidepill{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+    // .btn:active{
+    //     border: none;
+    //     background-color: #ffff;
+    //     box-shadow: 0 2px 7px #ffff;
+    // }
+    // .btn{
+    //     border: none;
+    //     background-color: #ffff;
+    //     box-shadow: 0 12px 7px #ffff;
+    // }
+    .bottombar{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 110px;
+        width: 300px;
+        padding: 17px;
+        background: #f0f0f0;
+        border-radius: 7px;
+        text-align: center;
+        // justify-content: space-between;
+    
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        padding: 12px;
+    }
+    .textss{
+        font-weight: 600;
+    }
+    .paginations{
+      display:flex ;
+      justify-content: center;
+      align-content: center;
+    }
+    :host {
+        font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      }
+      
+      .text-center {
+        text-align: center;
+      }
+      
+      .list {
+        max-width: 550px;
+        margin: auto;
+      }
+      
+      li {
+        margin-bottom: 5px;
+      }

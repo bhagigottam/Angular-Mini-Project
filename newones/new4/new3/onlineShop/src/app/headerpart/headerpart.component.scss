@@ -1,0 +1,317 @@
+.mainContainer{
+ background-color: #ffff;
+ 
+}
+.loginSignupForm{
+    // border: 1px solid gray;
+    padding: 8px;
+    margin-top: 18px;
+    h3{
+        text-align: center;
+    }
+    .inputContainer{
+        margin:12px 0px;
+        input{
+            
+            height: 36px;
+            margin-bottom: 18px;
+            margin-top: 8px;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid gray;
+            width: 100%;
+        }
+    }
+}
+.headerContainer{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.leftsidePart{
+    flex:1.2;
+}
+.middlePart{
+    flex:2.5;
+}
+.rightsidePart{
+    
+
+
+    flex: 0.8;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+}
+.threeItems{
+    display:flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-left: 10px;
+}
+.heading{
+    display:flex;
+    cursor: pointer;
+    justify-items: center;
+    align-items: center;
+}
+.shopimg{
+    height:25px;
+    width:25px;
+}
+.headtag{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px;
+    padding-left: 5px;
+}
+.searchandtext{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 10px;
+    align-items: center;
+    justify-items: center;
+}
+.searchbar{
+    width: 460px;
+    height: 25px;
+    /* border: 1px solid grey; */
+    background-color: lightgray;
+    border-radius: 30px;
+}
+.searchpng{
+    height: 20px;
+    width: 20px;
+    // padding: 4px;
+ 
+}
+
+button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    // border: 1px solid transparent;
+    border: none;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+    padding-left: 120%;
+  }
+  
+  button[type="submit"]:hover {
+    opacity: 1;
+  }
+  
+  button[type="submit"]:focus,
+  input[type="search"]:focus {
+    box-shadow: 0 0 3px 0 #1183d6;
+    border-color: #1183d6;
+    outline: none;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    width: 525px;
+    height: 38px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    // color: #555;
+    // display: flex;
+    // padding: 2px;
+    // border: 1px solid currentColor;
+    // border-radius: 5px;
+    // width:525px;
+    // margin: 0 0 30px;
+  }
+  
+  input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    width:100%;
+  }
+  
+  input[type="search"]::placeholder {
+    color: #bbb;
+  }
+  .ptag{
+    color: #1183d6;
+    margin: 0px;
+  }
+  section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    width: 490px;
+  }
+  
+  .example-button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+  .signbutton{
+color: #1183d6;
+  }
+  .cartbutton{
+    color: #1183d6;
+  }
+  .buttonspart{
+    display: flex;
+    /* justify-items: center; */
+    /* align-items: center; */
+    width: 100%;
+    justify-content: space-around;
+  }
+  .profile{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+  }
+  .middleContainer{
+    padding-top: 30px;
+    // padding-left: 10%;
+    // padding-right: 10%;
+    margin-left: 6%;
+  }
+  .imagescontainer{
+    display: flex;
+    flex: 1;
+  }
+  .textimg{
+    margin:0px;
+    font-size: 14px;
+
+  }
+  .pensvg{
+ height: 25px;
+ width:25px;
+  }
+  .centering{
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .centering:hover{
+    background-color: rgb(141, 181, 241);
+    border-radius: 15px;
+
+    .textimg{
+        color: #1183d6;
+    }
+  }
+
+  .modalParent{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.459);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalBody{
+    width: 400px;
+    // max-height: 500px;
+    // height: auto;
+    height: 420px;
+    border-radius: 8px;
+    background: white;
+    padding: 8px;
+}
+.parenttab{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background: white;
+    
+}
+.tabitem1{
+height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+    font-size: 18px;
+    text-align: center;
+}
+.tabitem2{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+    font-size: 18px;
+    text-align: center;
+}
+.bluecolour{
+    border-bottom: 2px solid #1183d6;
+    color: #1183d6;
+}
+.loginbutton{
+    // margin-top: 10px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #1183d6;
+    color: white;
+    cursor: pointer;
+}
+.closing{
+    color:red;
+    margin:0px;
+    cursor: pointer;
+}
+.loging{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-top: 7px;
+}

@@ -1,0 +1,41 @@
+.leftnavContainer{
+    padding-top:6px;
+ 
+}
+.texttag{
+    color:#1183d6;
+    margin-left:20px;
+}
+.departmentbutton{
+    width:240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cursorPointer{
+  cursor: pointer;
+
+}
+.mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  ::ng-deep .mat-expansion-panel-content{
+    font-size:16px;
+    
+  }
+  ::ng-deep .mat-expansion-panel-content:hover{
+    font-size:16px;
+    background-color: rgb(255, 255, 255);
+  }
+  ::ng-deep .mat-expansion-panel-body {
+  background-color: rgb(255, 253, 253);
+  }
+  .checkboxtext{
+    display: flex;
+    padding-top: 10px;
+  }
+  .textforcheck{
+    padding-left: 10px;
+    font-size: 15px;
+    margin:0px;
+  }

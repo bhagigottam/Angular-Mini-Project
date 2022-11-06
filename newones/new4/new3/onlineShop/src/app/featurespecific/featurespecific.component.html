@@ -1,0 +1,135 @@
+<div class="allinoneContainer">
+
+    <app-headerpart (searchpressed)="doSearch($event)" ></app-headerpart>
+    <div class="centeringpurpose">
+      <div class="leftContainer">
+        <app-left-item (changedfilters)="filtersChanged($event)" ></app-left-item>
+      </div>
+      <div class="rightContainer">
+        <h2>{{featureId}}</h2>
+        <div class="dropdowns1">
+          <div class="row" style="width:100%">
+            <!-- <div class="col-3">
+              <div ngbDropdown class="d-inline-block">
+  
+                <button mat-raised-button type="button" class="btn " id="dropdownBasic1" ngbDropdownToggle>Useless
+                  first</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem>Action - 1</button>
+                  <button ngbDropdownItem>Another Action</button>
+                  <button ngbDropdownItem>Something else is here</button>
+                </div>
+              </div>
+            </div> -->
+  
+            <!-- <div class="col-3">
+              <div ngbDropdown class="d-inline-block">
+  
+                <button mat-raised-button type="button" class="btn " id="dropdownBasic1" ngbDropdownToggle>
+                  connections</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem>Action - 1</button>
+                  <button ngbDropdownItem>Another Action</button>
+                  <button ngbDropdownItem>Something else is here</button>
+                </div>
+              </div>
+            </div> -->
+  
+  
+            <div class="col-3">
+              <div ngbDropdown class="d-inline-block">
+  
+                <button mat-raised-button type="button" class="btn " id="dropdownBasic1" ngbDropdownToggle>Deliver Options
+                  </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem>Action - 1</button>
+                  <button ngbDropdownItem>Another Action</button>
+                  <button ngbDropdownItem>Something else is here</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-right:10px">
+            <mat-button-toggle-group (change)="buttonChanged($event,group.value)" #group="matButtonToggleGroup"  name="favoriteColor" aria-label="Favorite Color">
+              <mat-button-toggle value="default">default</mat-button-toggle>
+              <mat-button-toggle value="HighToLow">sort by price(high to low)</mat-button-toggle>
+              <mat-button-toggle value="LowToHigh">sort by price(low to high)</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+          <div>
+            <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color">
+              <mat-button-toggle value="red">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                  <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+              </mat-button-toggle>
+              <mat-button-toggle value="green">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-left" viewBox="0 0 16 16">
+                  <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+              </mat-button-toggle>
+  
+            </mat-button-toggle-group>
+          </div>
+        </div>
+  
+        <div class=" sidepill">
+          <h5 style="margin:0px">Related:</h5>
+          <div class="pillss" *ngFor="let pill of pills">
+            {{pill}}
+          </div>
+  
+  
+        </div>
+  
+  
+        <div class="wraps">
+          <div *ngFor="let product of prods" style="margin:10px">
+            <app-product-card [data]="product"></app-product-card>
+          </div>
+          
+        </div>
+  
+  
+  <div class="footer">
+    <div class="bottombar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-lightning" viewBox="0 0 16 16">
+        <path d="M13.405 4.027a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 10H13a3 3 0 0 0 .405-5.973zM8.5 1a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1 0 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4.002 4.002 0 0 1 8.5 1zM7.053 11.276A.5.5 0 0 1 7.5 11h1a.5.5 0 0 1 .474.658l-.28.842H9.5a.5.5 0 0 1 .39.812l-2 2.5a.5.5 0 0 1-.875-.433L7.36 14H6.5a.5.5 0 0 1-.447-.724l1-2z"/>
+      </svg>
+      <div>
+        <span class="textss">Clear & Usable user flows</span>
+      </div>
+      <div>
+        <p>lets toarst run</p>
+      </div>
+    
+    </div>
+    <div class="bottombar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-lightning" viewBox="0 0 16 16">
+        <path d="M13.405 4.027a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 10H13a3 3 0 0 0 .405-5.973zM8.5 1a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1 0 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4.002 4.002 0 0 1 8.5 1zM7.053 11.276A.5.5 0 0 1 7.5 11h1a.5.5 0 0 1 .474.658l-.28.842H9.5a.5.5 0 0 1 .39.812l-2 2.5a.5.5 0 0 1-.875-.433L7.36 14H6.5a.5.5 0 0 1-.447-.724l1-2z"/>
+      </svg>
+      <div>
+        <span class="textss">Fine & Styledcomponents </span>
+      </div>
+      <div>
+        <p>lets toarst run</p>
+      </div> 
+    </div>
+    <div class="bottombar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-lightning" viewBox="0 0 16 16">
+        <path d="M13.405 4.027a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 10H13a3 3 0 0 0 .405-5.973zM8.5 1a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1 0 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4.002 4.002 0 0 1 8.5 1zM7.053 11.276A.5.5 0 0 1 7.5 11h1a.5.5 0 0 1 .474.658l-.28.842H9.5a.5.5 0 0 1 .39.812l-2 2.5a.5.5 0 0 1-.875-.433L7.36 14H6.5a.5.5 0 0 1-.447-.724l1-2z"/>
+      </svg>
+      <div>
+        <span class="textss">Customizable & Reusable</span>
+      </div>
+      <div>
+        <p>lets toarst run</p>
+      </div>
+    </div>
+  </div>
+      
+      </div>
+    </div>
+  
+  </div>
+  <div style=" padding-bottom: 150px;"></div>
